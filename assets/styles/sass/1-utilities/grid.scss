@@ -1,0 +1,138 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+}
+
+
+.container{
+  position: relative;
+  margin: 0 auto;
+
+  // we will pass to arguments here. 1 is the name of modifier, 2 is the value of width
+  @include states(isFixed){
+    max-width: 960px;
+  }
+  // we will pass to arguments here. 1 is the name of modifier, 2 is the value of width
+  @include states(isFluid){
+    width: 100%;
+  }
+
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    padding: 0;
+    @include fluid(80%);
+  }
+}
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+
+  .col-mar-left{
+    margin-left: 2.272%;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+
+  .row{
+    flex-direction: row;
+      @include has(col-1){
+        width: 8.33%;
+        @extend .col-mar-left;
+      }
+      @include has(col-2){
+        width: 16.66%;
+        @extend .col-mar-left;
+      }
+      @include has(col-3){
+        width: 25%;
+        @extend .col-mar-left;
+      }
+      @include has(col-4){
+        width: 33.33%;
+        @extend .col-mar-left;
+      }
+
+      @include has(col-5){
+        width: 41.66%;
+        @extend .col-mar-left;
+      }
+
+      @include has(col-6){
+        width: 50%;
+        @extend .col-mar-left;
+      }
+      @include has(col-7){
+        width: 58.33%;
+        @extend .col-mar-left;
+      }
+
+      @include has(col-8){
+        width: 66.66%;;
+        @extend .col-mar-left;
+      }
+      @include has(col-9){
+        width: 75.0%;
+        @extend .col-mar-left;
+      }
+      @include has(col-10){
+        width: 83.33%;
+        @extend .col-mar-left;
+      }
+      @include has(col-11){
+        width: 91.66%;
+        @extend .col-mar-left;
+      }
+      @include has(col-12){
+        width: 100%;
+        margin-left: 0;
+      }
+
+  }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}

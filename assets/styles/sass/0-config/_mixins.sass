@@ -1,0 +1,14 @@
+// for BEM
+=has($name)
+  @at-root #{&}__#{$name}
+    @content
+
+=states($name)
+  @at-root #{&}--#{$name}
+    @content
+
+=fixed($value)
+  max-width: $value
+
+=fluid($value)
+  width: $value
