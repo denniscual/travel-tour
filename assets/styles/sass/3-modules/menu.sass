@@ -1,0 +1,21 @@
+// single nav menu
+.menuList
+    height: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    
+    @include has(item)
+        flex: 1 0 auto // if there is available space, the box will fill the space.
+        text-align: center
+        margin-right: 1em
+        background-color: transparent
+
+        &:last-child
+            margin-right: 0
+        
+        & > .link--light
+            font-size: 1.2rem
+        
+        &:hover
+            background-color: #0e79cd
