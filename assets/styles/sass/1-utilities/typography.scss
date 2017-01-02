@@ -4,11 +4,10 @@
 html {font-size: 1em;}
 
 body {
-  background-color: $white;
-  font-family: 'Roboto', 'Helvetica Neue', 'Open Sans', serif;
-  font-weight: 400;
+  font-family: 'Open Sans', 'Helvetica', 'Helvetica Neue', 'Open Sans', serif;
+  font-weight: 300;
   line-height: 1.45;
-  color: $colorFont;
+  color: $colorFontDefault;
 }
 
 p {margin-bottom: 1.3em;}

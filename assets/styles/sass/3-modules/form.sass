@@ -1,0 +1,52 @@
+.siteForm
+    max-width: 650px
+    margin: 0 auto
+
+    & > .row
+        margin-bottom: 0.8em
+
+        &:nth-child(2) .siteForm__group:first-child
+            margin-bottom: 0.8em
+        
+        &:nth-child(3) .siteForm__group
+            padding: 0
+    
+    & .siteForm__group
+        display: flex
+        background-color: rgba(#bdbdbd, 0.40)
+        height: 60px
+        padding: 0 2em
+
+        // &:last-child
+        //     padding: 0
+
+    & .siteForm__input
+        color: $white
+        font-size: rem(17)
+        background-color: transparent
+        border: 0
+        outline: 0
+        flex: 1
+
+    & .siteForm__button
+        background-color: $accentColor
+        width: 100%
+        border: 0
+        color: $white
+        text-transform: uppercase
+        font-size: (19)
+        outline: 0
+        transition: background-color 400ms ease-in
+
+        &:hover
+            background-color: $darkAccentColor
+    
+    & .formIcon
+        margin-right: 0.58em
+
+    
+
+
+@media (min-width: 750px)
+    .siteSection .row:last-child
+        justify-content: center

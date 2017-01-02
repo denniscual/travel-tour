@@ -1,0 +1,67 @@
+.galleryItem 
+    position: relative
+    cursor: pointer
+
+    &:hover .galleryItem__overlay
+        opacity: 1
+
+    & > img
+        width: 100%
+        max-width: 100%
+        height: 100%
+        object-fit: cover
+
+    @include has(overlay)
+        position: absolute
+        top: 0
+        height: 100%
+        background-color: rgba(#2A1B1B, 0.66)
+        padding: em(14)
+        display: flex
+        flex-direction: column
+        opacity: 0
+        transition: opacity $softTransition
+
+    @include has(icon)
+        margin-bottom: em(70)
+
+        & > i
+            color: #d4d4d4
+            font-size: rem(14)
+
+            &:first-child
+                float: left
+        
+            &:last-child
+                float: right
+    
+    @include has(def)
+        margin-bottom: em(8)
+
+        h4
+            margin-bottom: em(13)
+            font-size: rem(16)
+            font-weight: 400
+            color: $white
+        p
+            font-size: rem(14)
+            font-weight: 300
+            color: #d4d4d4
+    
+    @include has(action)
+        display: flex
+        justify-content: space-between
+        
+        & > span
+            font-size: rem(13)
+            font-weight: 400
+            color: $accentColor
+            text-transform: uppercase
+            transition: color $softTransition
+
+            &:hover
+                color: $darkAccentColor
+
+        & > div
+            display: flex
+

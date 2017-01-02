@@ -1,21 +1,34 @@
 // single nav menu
-.menuList
-    height: 100%
+.menuCircle
     display: flex
-    justify-content: space-around
-    align-items: center
-    
+    flex-direction: column
+
+
     @include has(item)
-        flex: 1 0 auto // if there is available space, the box will fill the space.
-        text-align: center
-        margin-right: 1em
-        background-color: transparent
+        display: inline-block
+        height: 10px
+        width: 10px
+        border-radius: 50%
+        border: 1.5px solid $white
+
+        @include states(isActive)
+            background-color: $accentColor
+            border: 1.5px solid $accentColor   
+
+.menuCircle--isVertical
+    flex-direction: column
+
+    .menuCircle__item
+        margin-bottom: 0.3em
 
         &:last-child
-            margin-right: 0
-        
-        & > .link--light
-            font-size: 1.2rem
-        
-        &:hover
-            background-color: #0e79cd
+            margin-bottom: 0px
+
+.menuCircle--isHorizontal
+    flex-direction: row
+
+    .menuCircle__item
+        margin-right: 0.3em
+
+        &:last-child
+            margin-right: 0px

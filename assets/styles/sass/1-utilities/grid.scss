@@ -10,6 +10,7 @@ body{
 
 .container{
   width: 100%;
+  height: 100%;
   position: relative;
   margin: 0 auto;
   padding: 0 20px;
@@ -20,7 +21,7 @@ body{
   }
   // we will pass to arguments here. 1 is the name of modifier, 2 is the value of width
   @include states(isFluid){
-    width: 80%;
+    width: 100%;
   }
 
 }
@@ -28,7 +29,6 @@ body{
 .row {
   display: flex;
   flex-direction: column;
-
 }
 
 

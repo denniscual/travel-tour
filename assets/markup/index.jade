@@ -2,11 +2,165 @@ doctype html
 html
   head
     include snippets/header
-    title 
+    title Drish Travel and Tour
     // links
     link(rel="stylesheet", href="/assets/styles/css/templates/index.css")
   body
    
-      
-          
+    section#siteMasthead(role="mainbanner").container.container--isFLuid
+      .container.container--isFluid
+        .contentWrapper
+          img.line.line--topLeft(src="assets/images/line.png")
+          img.line.line--bottomLeft(src="assets/images/line.png")
+          img.line.line--topRight(src="assets/images/line.png")
+          img.line.line--bottomRight(src="assets/images/line.png")
+          .textWrapper
+            h3 Take me anywhere
+            h1 Drish Tour
+            span.iconNavigate
+              img(src="assets/images/arrow-down.svg" alt="arrow-down")
+            ul.menuCircle.menuCircle--isVertical
+              a.menuCircle__item.menuCircle__item--isActive(href="#")             
+              a.menuCircle__item(href="#")
+              a.menuCircle__item(href="#")
+              a.menuCircle__item(href="#")
+    main(role="maincontent")
+      section#siteBlurb.siteSection.container.container--isFluid 
+        h3.headline.headline--dark.headline--addedLine Why tour with us?
+        p.paraText.paraText--dark Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. Proin eget tortor lerem.           
+        span.iconNavigate
+          img(src="assets/images/arrow-down-dark.svg" alt="arrow-down-dark") 
+      section#siteFormSection.siteSection.container.container--isFluid      
+        h3.headline.headline--light.headline--addedLine Start Booking Now
+        form.siteForm
+          .row
+            .siteForm__group.row__col-12
+              i.formIcon.fa.fa-map-marker
+              input.siteForm__input(type="text" placeholder="Enter your destination")
+          .row
+            .siteForm__group.row__col-6   
+              i.formIcon.fa.fa-calendar-times-o
+              input.siteForm__input(type="text" placeholder="Time of check in")
+            .siteForm__group.row__col-6
+              i.formIcon.fa.fa-calendar-times-o
+              input.siteForm__input(type="text" placeholder="Time of check out")
+          .row
+            .siteForm__group.row__col-4
+              input.siteForm__button(type="submit" value="book now")
+      section#siteSeaTour.siteSection.container.container--isFixed
+          h3.headline.headline--dark.headline--addedLine The Best Sea Tour
+          .threeColumn.container.container--isFluid
+            .row
+              figure.row__col-4.galleryItem
+                img(src="assets/images/gallery/item-5.jpeg" alt="gal-1")
+                .galleryItem__overlay
+                  .galleryItem__icon
+                    i.fa.fa-expand
+                    i.fa.fa-calendar
+                  .galleryItem__def
+                    h4 Santorini
+                    p Ex laoreet commodi ullamco nisi, parturient error Doloribus nec proident sollicitudin incidunt commodi.
+                  .galleryItem__action
+                    span View More
+                    div
+                      .count
+                        i.count__item.fa.fa-heart
+                        span.count__item 150
+                      .count
+                        i.count__item.fa.fa-comments
+                        span.count__item 52
+              figure.row__col-4.galleryItem
+                img(src="assets/images/gallery/item-2.jpeg" alt="gal-2")
+                .galleryItem__overlay
+                  .galleryItem__icon
+                    i.fa.fa-expand
+                    i.fa.fa-calendar
+                  .galleryItem__def
+                    h4 Santorini
+                    p Ex laoreet commodi ullamco nisi, parturient error Doloribus nec proident sollicitudin incidunt commodi.
+                  .galleryItem__action
+                    span View More
+                    div
+                      .count
+                        i.count__item.fa.fa-heart
+                        span.count__item 150
+                      .count
+                        i.count__item.fa.fa-comments
+                        span.count__item 52
+              figure.row__col-4.galleryItem
+                img(src="assets/images/gallery/item-3.jpeg" alt="gal-2")
+                .galleryItem__overlay
+                  .galleryItem__icon
+                    i.fa.fa-expand
+                    i.fa.fa-calendar
+                  .galleryItem__def
+                    h4 Santorini
+                    p Ex laoreet commodi ullamco nisi, parturient error Doloribus nec proident sollicitudin incidunt commodi.
+                  .galleryItem__action
+                    span View More
+                    div
+                      .count
+                        i.count__item.fa.fa-heart
+                        span.count__item 150
+                      .count
+                        i.count__item.fa.fa-comments
+                        span.count__item 52
+                
+            .row
+              figure.row__col-4.galleryItem
+                img(src="assets/images/gallery/item-4.jpg" alt="gal-3")
+                .galleryItem__overlay
+                  .galleryItem__icon
+                    i.fa.fa-expand
+                    i.fa.fa-calendar
+                  .galleryItem__def
+                    h4 Santorini
+                    p Ex laoreet commodi ullamco nisi, parturient error Doloribus nec proident sollicitudin incidunt commodi.
+                  .galleryItem__action
+                    span View More
+                    div
+                      .count
+                        i.count__item.fa.fa-heart
+                        span.count__item 150
+                      .count
+                        i.count__item.fa.fa-comments
+                        span.count__item 52
+              figure.row__col-4.galleryItem
+                img(src="assets/images/gallery/item-5.jpeg" alt="gal-5")
+                .galleryItem__overlay
+                  .galleryItem__icon
+                    i.fa.fa-expand
+                    i.fa.fa-calendar
+                  .galleryItem__def
+                    h4 Santorini
+                    p Ex laoreet commodi ullamco nisi, parturient error Doloribus nec proident sollicitudin incidunt commodi.
+                  .galleryItem__action
+                    span View More
+                    div
+                      .count
+                        i.count__item.fa.fa-heart
+                        span.count__item 150
+                      .count
+                        i.count__item.fa.fa-comments
+                        span.count__item 52
+              figure.row__col-4.galleryItem
+                img(src="assets/images/gallery/item-6.jpeg" alt="gal-6")
+                .galleryItem__overlay
+                  .galleryItem__icon
+                    i.fa.fa-expand
+                    i.fa.fa-calendar
+                  .galleryItem__def
+                    h4 Santorini
+                    p Ex laoreet commodi ullamco nisi, parturient error Doloribus nec proident sollicitudin incidunt commodi.
+                  .galleryItem__action
+                    span View More
+                    div
+                      .count
+                        i.count__item.fa.fa-heart
+                        span.count__item 150
+                      .count
+                        i.count__item.fa.fa-comments
+                        span.count__item 52
+
+   
     include snippets/footer

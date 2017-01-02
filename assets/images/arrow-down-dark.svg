@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="20px" height="50px" viewBox="0 0 14 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
-    <title>arrow-down</title>
+    <title>arrow-down 2</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop" transform="translate(-505.000000, -410.000000)" fill="#FFFFFF">
-            <g id="Main-Banner" transform="translate(-160.000000, 0.000000)">
-                <g id="arrow-down" transform="translate(665.000000, 410.000000)">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.639167444">
+        <g id="Desktop" transform="translate(-505.000000, -905.000000)" fill="#5D5D5D">
+            <g id="Description" transform="translate(0.000000, 551.000000)">
+                <g id="arrow-down-2" transform="translate(505.000000, 354.000000)">
                     <g id="Group">
                         <ellipse id="Oval" cx="6.77419355" cy="5.92222222" rx="1.35483871" ry="1.36666667"></ellipse>
                         <path d="M6.77419355,0.227777778 C3.03303226,0.227777778 0,3.28774444 0,7.06202222 L0,18.4490889 C0,22.2233667 3.03303226,25.2833333 6.77419355,25.2833333 C10.5153548,25.2833333 13.5483871,22.2233667 13.5483871,18.4490889 L13.5483871,7.06202222 C13.5483871,3.28774444 10.5153548,0.227777778 6.77419355,0.227777778 L6.77419355,0.227777778 Z M12.6451613,18.4490889 C12.6451613,21.7149667 10.0113548,24.3722222 6.77419355,24.3722222 C3.53703226,24.3722222 0.903225806,21.7149667 0.903225806,18.4490889 L0.903225806,7.06202222 C0.903225806,3.79614444 3.53703226,1.13888889 6.77419355,1.13888889 C10.0113548,1.13888889 12.6451613,3.79614444 12.6451613,7.06202222 L12.6451613,18.4490889 L12.6451613,18.4490889 Z" id="Shape"></path>

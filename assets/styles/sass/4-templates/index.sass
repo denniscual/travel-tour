@@ -1,6 +1,141 @@
 // we are importing our base styles
 @import "../2-base/base"
 
+@import "../3-modules/form"
+@import "../3-modules/headline"
+@import "../3-modules/gallery"
 @import "../3-modules/menu"
-@import "../3-modules/link"
+@import "../3-modules/paragraph"
 
+
+
+// mobile first styles
+
+body
+    background-color: #eeeeee
+
+.siteSection
+    padding: 100px 20px
+
+#siteMasthead
+    height: 700px
+    background-image: url(../../../images/banner-img.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+
+    & > .container
+        +fluid(90%)
+        padding: 25px 0
+
+    & .menuCircle
+        position: absolute
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+
+
+.contentWrapper
+    position: relative
+    height: 100%
+    width: 100%
+
+.line
+    position: absolute
+    width: 30px
+    height: 30px
+
+    @include states(topLeft)
+        top: 0
+        left: 0
+    
+    @include states(bottomLeft)
+        bottom: 0
+        left: 0
+        transform: rotate(-90deg)
+    
+    @include states(topRight)
+        top: 0
+        right: 0
+        transform: rotate(90deg)
+    
+    @include states(bottomRight)
+        bottom: 0
+        right: 0
+        transform: rotate(180deg)
+
+.textWrapper
+    position: absolute
+    height: 100%
+    width: 100%
+    text-align: center
+    
+    & > h3
+        letter-spacing: 4px
+        font-weight: 300
+        opacity: .84
+        margin-bottom: 10em
+        font-size: 1rem
+        font-weight: 700
+        color: $white
+        text-transform: uppercase
+        margin-top: 0
+    
+    & > h1
+        font-family: "another shabby"
+        font-size: 7rem
+        color: $white
+        margin-bottom: 1em
+
+// siet tour blurb        
+#siteBlurb
+    background-image: url(../../../images/tour-with-us-img.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    text-align: center
+
+// site form section
+#siteFormSection
+    background-image: url(../../../images/form-img.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+
+// siteSeaTour section
+.threeColumn .row
+    padding: 0px
+    margin-bottom: 0.8em
+
+    &:last-child
+        margin-bottom: 0px
+
+    @include has(col-4)
+        height: 300px
+        margin-bottom: 0.8em
+
+        &:last-child
+            margin-bottom: 0px
+
+.count
+    margin-right: em(12)
+
+    &:last-child
+        margin-rigth: 0
+
+    @include has(item)
+        font-size: rem(13)
+        font-weight: 300
+        color: #d4d4d4
+        margin-right: em(7)
+
+        
+        
+
+@media (min-width: 470px)
+    .textWrapper > h1
+        margin-bottom: 2em 
+
+@media (min-width: 750px)
+    .three-column-grid .row
+        margin-bottom: 0
