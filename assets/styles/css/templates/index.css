@@ -606,20 +606,22 @@ figure {
   text-transform: uppercase;
   margin-top: 0;
   text-align: center; }
-
-.headline--light {
-  color: #fff; }
-
-.headline--dark {
-  color: #545454; }
-
-.headline--addedLine:after {
-  content: "";
-  display: block;
-  width: 127px;
-  height: 3px;
-  margin: 2.5em auto 3.5em auto;
-  background-color: #3DEFC7; }
+  .headline--accent {
+    color: #3DEFC7; }
+  .headline--light {
+    color: #fff; }
+  .headline--dark {
+    color: #545454; }
+  .headline--addedLine:after {
+    content: "";
+    display: block;
+    width: 127px;
+    height: 3px;
+    margin: 2.5em auto 3.5em auto;
+    background-color: #3DEFC7; }
+  .headline--big {
+    font-size: 3.125rem;
+    color: #fff; }
 
 .galleryItem {
   position: relative;
@@ -717,10 +719,7 @@ figure {
       margin-bottom: 0px; }
 
 .menuCircle--isHorizontal {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  display: inline-block; }
   .menuCircle--isHorizontal .menuCircle__item {
     margin-right: 0.3em; }
     .menuCircle--isHorizontal .menuCircle__item:last-child {
@@ -744,7 +743,7 @@ body {
 
 #siteMasthead {
   height: 700px;
-  background-image: url(../../../images/banner-img.png);
+  background-image: url("../../../images/banner-img.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -808,14 +807,14 @@ body {
     margin-bottom: 1em; }
 
 #siteBlurb {
-  background-image: url(../../../images/tour-with-us-img.png);
+  background-image: url("../../../images/tour-with-us-img.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   text-align: center; }
 
 #siteFormSection {
-  background-image: url(../../../images/form-img.png);
+  background-image: url("../../../images/form-img.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -834,12 +833,26 @@ body {
 .count {
   margin-right: 0.75em; }
   .count:last-child {
-    margin-rigth: 0; }
+    margin-right: 0; }
   .count__item {
     font-size: 0.8125rem;
     font-weight: 300;
     color: #d4d4d4;
     margin-right: 0.4375em; }
+
+#sitePackageSection {
+  background-image: url("../../../images/package-img.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center; }
+  #sitePackageSection > .headline--accent {
+    margin-bottom: 3em; }
+  #sitePackageSection > .headline--big {
+    margin-bottom: 0.625em; }
+  #sitePackageSection > .paraText {
+    text-transform: uppercase;
+    color: #fff; }
 
 @media (min-width: 470px) {
   .textWrapper > h1 {

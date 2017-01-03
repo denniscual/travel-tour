@@ -12,19 +12,17 @@
 // mobile first styles
 
 body
-    background-color: #eeeeee
+    background-color: $bodyBackgroundColor
 
 .siteSection
     padding: 100px 20px
 
 #siteMasthead
     height: 700px
-    background-image: url(../../../images/banner-img.png)
-    background-repeat: no-repeat
-    background-position: center center
-    background-size: cover
+    +setBackgroundImage("../../../images/banner-img.png")
 
-    & > .container
+
+    > .container
         +fluid(90%)
         padding: 25px 0
 
@@ -70,7 +68,7 @@ body
     width: 100%
     text-align: center
     
-    & > h3
+    > h3
         letter-spacing: 4px
         font-weight: 300
         opacity: .84
@@ -81,7 +79,7 @@ body
         text-transform: uppercase
         margin-top: 0
     
-    & > h1
+    > h1
         font-family: "another shabby"
         font-size: 7rem
         color: $white
@@ -89,18 +87,13 @@ body
 
 // siet tour blurb        
 #siteBlurb
-    background-image: url(../../../images/tour-with-us-img.png)
-    background-repeat: no-repeat
-    background-position: center center
-    background-size: cover
+    +setBackgroundImage("../../../images/tour-with-us-img.png")
     text-align: center
 
 // site form section
 #siteFormSection
-    background-image: url(../../../images/form-img.png)
-    background-repeat: no-repeat
-    background-position: center center
-    background-size: cover
+    +setBackgroundImage("../../../images/form-img.png")
+
 
 // siteSeaTour section
 .threeColumn .row
@@ -121,7 +114,7 @@ body
     margin-right: em(12)
 
     &:last-child
-        margin-rigth: 0
+        margin-right: 0
 
     @include has(item)
         font-size: rem(13)
@@ -129,7 +122,22 @@ body
         color: #d4d4d4
         margin-right: em(7)
 
-        
+
+// Site package section
+#sitePackageSection
+    +setBackgroundImage("../../../images/package-img.png")
+    text-align: center
+
+    > .headline--accent
+        margin-bottom: 3em
+    
+    > .headline--big
+        margin-bottom: em(10)
+    
+    > .paraText
+        text-transform: uppercase
+        color: $white
+    
         
 
 @media (min-width: 470px)

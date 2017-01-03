@@ -5,18 +5,40 @@
     margin-top: 0
     text-align: center
 
+    @include states(accent)
+        color: $accentColor
 
-.headline--light
-    color: $white
+    @include states(light)
+        color: $white
+    
+    @include states(dark)
+        color: $colorFontDark
+    
+    @include states(addedLine)
+        &:after
+            content: ""
+            display: block
+            width: 127px
+            height: 3px
+            margin: 2.5em auto 3.5em auto
+            background-color: $accentColor
+    
+    @include states(big)
+        font-size: rem(50)
+        color: $white
+        
 
-.headline--dark
-    color: $colorFontDark
+// .headline--light
+//     color: $white
 
-.headline--addedLine
-    &:after
-        content: ""
-        display: block
-        width: 127px
-        height: 3px
-        margin: 2.5em auto 3.5em auto
-        background-color: $accentColor
+// .headline--dark
+//     color: $colorFontDark
+
+// .headline--addedLine
+//     &:after
+//         content: ""
+//         display: block
+//         width: 127px
+//         height: 3px
+//         margin: 2.5em auto 3.5em auto
+//         background-color: $accentColor
