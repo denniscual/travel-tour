@@ -1,0 +1,10 @@
+.rateStar
+    display: inline-block
+
+    @include has(item)
+        font-size: rem(14)
+        color: $accentColor
+        margin-right: 0.3em
+
+        @include states(inActive)
+            color: #BCBCBC

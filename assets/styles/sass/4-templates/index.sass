@@ -6,6 +6,7 @@
 @import "../3-modules/gallery"
 @import "../3-modules/menu"
 @import "../3-modules/paragraph"
+@import "../3-modules/testimonial"
 
 
 
@@ -81,7 +82,7 @@ body
     
     > h1
         font-family: "another shabby"
-        font-size: 7rem
+        font-size: 6rem
         color: $white
         margin-bottom: 1em
 
@@ -96,19 +97,22 @@ body
 
 
 // siteSeaTour section
-.threeColumn .row
-    padding: 0px
-    margin-bottom: 0.8em
+.threeColumn 
+    padding: 0
 
-    &:last-child
-        margin-bottom: 0px
-
-    @include has(col-4)
-        height: 300px
+    .row
+        padding: 0px
         margin-bottom: 0.8em
 
         &:last-child
             margin-bottom: 0px
+
+        @include has(col-4)
+            height: 300px
+            margin-bottom: 0.8em
+
+            &:last-child
+                margin-bottom: 0px
 
 .count
     margin-right: em(12)
@@ -137,6 +141,14 @@ body
     > .paraText
         text-transform: uppercase
         color: $white
+
+#siteTestimonialSection
+    +setBackgroundImage("../../../images/tour-with-us-img.png")
+    background-position: top left
+    text-align: center    
+
+    > .container
+        padding: 0
     
         
 
@@ -145,5 +157,8 @@ body
         margin-bottom: 2em 
 
 @media (min-width: 750px)
+    .textWrapper > h1
+        font-size: 7rem
+
     .three-column-grid .row
         margin-bottom: 0

@@ -1,0 +1,44 @@
+@import "rate"
+
+.testimonial
+    display: flex
+    flex-direction: column
+    margin-bottom: em(50)
+
+    &:last-child
+        margin-bottom: 0
+
+    @include has(head)
+        display: flex
+        // justify-content: space-around
+        align-items: baseline
+
+        > .headline
+            font-size: rem(16)
+            font-weight: 400
+            margin-bottom: em(13)
+        
+        > .rateStar
+            margin-left: em(16)
+        
+    > .paraTextSmall
+        margin-top: 0 
+    
+    @include has(add)
+        margin-top: em(5)
+        font-size: rem(14)
+        font-weight: 400
+        text-align: left
+
+@media (min-width: 750px)
+
+    .testimonial
+        margin-bottom: 0
+
+        &:first-child
+            margin-left: 0
+            margin-right: em(25)
+
+        &:last-child
+            margin-right: 0
+            margin-left: em(25)
