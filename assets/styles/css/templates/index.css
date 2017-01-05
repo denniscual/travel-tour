@@ -824,7 +824,7 @@ body {
   background-color: #eeeeee; }
 
 .siteSection {
-  padding: 100px 20px; }
+  padding: 120px 20px; }
 
 #siteMasthead {
   height: 700px;
@@ -897,6 +897,8 @@ body {
   background-position: center center;
   background-size: cover;
   text-align: center; }
+  #siteBlurb > p {
+    margin-bottom: 0; }
 
 #siteFormSection {
   background-image: url("../../../images/form-img.png");
