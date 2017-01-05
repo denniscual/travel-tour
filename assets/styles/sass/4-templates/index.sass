@@ -146,11 +146,29 @@ body
     +setBackgroundImage("../../../images/tour-with-us-img.png")
     background-position: top left
     text-align: center    
+    padding-bottom: 50px
 
     > .container
         padding: 0
-    
+
+#siteFooter
+    margin-top: em(100px)
+    padding-top: 3.5em
+    border-top: 2px solid #C8C8C8    
+    text-align: center
         
+    [class^='row__']
+        margin-bottom: em(20)
+    
+    .socialMenu a
+        font-size: rem(18)
+
+.copyright
+    font-size: rem(13)
+    font-weight: 700
+    text-transform: uppercase
+    color: rgba(#767676, 0.40)
+
 
 @media (min-width: 470px)
     .textWrapper > h1
@@ -162,3 +180,15 @@ body
 
     .three-column-grid .row
         margin-bottom: 0
+    
+    #siteFooter [class^='row__']
+        margin-bottom: 0
+    
+    .socialMenu
+        justify-content: flex-end
+
+    .privacyMenu .siteMenu__item
+        margin-right: em(40)
+
+        &:last-child
+            margin-right: 0

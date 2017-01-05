@@ -9,7 +9,7 @@
         height: 10px
         width: 10px
         border-radius: 50%
-        border: 1.5px solid $white
+        border: 1px solid $white
 
         @include states(isActive)
             background-color: $accentColor
@@ -32,3 +32,29 @@
 
         &:last-child
             margin-right: 0px
+
+
+.siteMenu
+    display: flex
+    justify-content: center
+    
+    @include has(item)
+        font-size: rem(13)
+        font-weight: 700
+        text-transform: uppercase
+        margin-right: em(20)
+
+        &:last-child
+            margin-right: 0
+
+        > a
+            transition: color $softTransition
+            color: rgba(#767676, 0.40)
+
+            &:hover
+                color: $accentColor
+
+@media (min-width: 750px)
+    .siteMenu
+        justify-content: flex-start
+    
